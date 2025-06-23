@@ -1,15 +1,27 @@
 # Task 1 – Nmap Scanning
 
 ## 🔍 Objective
-To perform a basic network scan using `nmap` to discover open ports and services on a target machine.
+Learn to discover open ports on devices in your local network to understand network exposure.
 
 ## 🛠 Tools Used
 - Nmap
-- Bash terminal
-- Linux OS (Kali/Debian)
+- Wireshark
+- linux (OS)
 
 ## 🧪 Steps Performed
-1. Identified the target IP address: `192.168.1.10`
-2. Performed a full TCP port scan using:
-   ```bash
-   nmap -sS -p- 192.168.1.10
+1. Installed Nmap using command **sudo apt install nmap** on the terminal
+2. Installed Wireshark from https://www.wireshark.org/
+3. Opened Wireshark on packet capture mode on the interface
+4. Performed a full TCP SYN port scan using nmap on the localhost
+
+## 📊 Output
+- Open ports: 22,23,445,5900
+- OS: Linux
+
+## 🧠 Learnings
+   PORTS     SERVICE           DESCRIPTION                                            VULNERABILITY
+   
+-  22        SSH               Remote login (encrypted)and command execution          Brute-force attacks, misconfigured keys
+-  23        Telnet            Remote login (Plaintext)                               Man-in-the-middle attacks(MITM)
+-  445       SMB               File and printer sharing (Windows)                     RCE via EternalBlue (MS17-010), credential leakage
+-  5900      VNC               Remote desktop GUI access                              Brute-force attacks, weak or missing authentication 
