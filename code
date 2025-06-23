@@ -1,0 +1,2 @@
+COMMAND:
+nmap -sS <ip_address> -o <output_file>
