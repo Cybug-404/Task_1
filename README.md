@@ -1,4 +1,4 @@
-# Task 1 – Nmap Scanning
+# Task 1 – Nmap TCP SYN Scan
 
 ## 🔍 Objective
 Learn to discover open ports on devices in your local network to understand network exposure.
