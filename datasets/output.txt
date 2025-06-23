@@ -1,0 +1,11 @@
+# Nmap 7.95 scan initiated Mon Jun 23 10:49:51 2025 as: /usr/lib/nmap/nmap -sS -o output.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000070s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+23/tcp   open  telnet
+445/tcp  open  microsoft-ds
+5900/tcp open  vnc
+
+# Nmap done at Mon Jun 23 10:49:52 2025 -- 1 IP address (1 host up) scanned in 0.14 seconds
