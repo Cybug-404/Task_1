@@ -19,11 +19,12 @@ Learn to discover open ports on devices in your local network to understand netw
 - OS: Linux
 
 ## 🧠 Learnings
-
-**PORTS**     **SERVICE**           **DESCRIPTION**                                           **VULNERABILITY**
-
--  22        SSH               Remote login (encrypted) and command execution          Brute-force attacks, misconfigured keys  
--  23        Telnet            Remote login (Plaintext)                                 Man-in-the-middle attacks (MITM)  
--  445       SMB               File and printer sharing (Windows)                       RCE via EternalBlue (MS17-010), credential leakage  
--  5900      VNC               Remote desktop GUI access                                Brute-force attacks, weak or missing authentication
+-------------------------------------------------------------------------------------------------------------------------------------
+| PORT | SERVICE | DESCRIPTION                                     | VULNERABILITY                                                  |
+|------|---------|-------------------------------------------------|----------------------------------------------------------------|
+| 22   | SSH     | Remote login (encrypted) and command execution  | Brute-force attacks, misconfigured keys                        |
+| 23   | Telnet  | Remote login (Plaintext)                        | Man-in-the-middle attacks (MITM)                               |
+| 445  | SMB     | File and printer sharing (Windows)              | RCE via EternalBlue (MS17-010), credential leakage             |
+| 5900 | VNC     | Remote desktop GUI access                       | Brute-force attacks, weak authentication            |
+-------------------------------------------------------------------------------------------------------------------------------------
 
