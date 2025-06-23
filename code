@@ -1,2 +1,6 @@
 COMMAND:
-nmap -sS <ip_address> -o <output_file>
+Nmap->
+  nmap -sS <ip_address> -o <output_file>
+
+Wireshark->
+  ip.addr == <ip_address> // filter
